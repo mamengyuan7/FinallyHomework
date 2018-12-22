@@ -62,7 +62,7 @@
 		<div class = "pos3" id = "pos3">
 			<img src="img/app.png" alt="">
 			<img style="display: block; margin-top: 30px;margin-left: 20px;" id = 'pp1' src="img/serwei.png" alt="">
-			<img style="display: none;margin-left: 15px;" id = "pp2" src="img/erwei.png" alt="">
+			<img style="display: none;margin-left: 20px;height: 80px;" id = "pp2" src="img/erwei.png" alt="">
 		</div>
 		<div class = "pos4" id = "pos4">
 			<img src="img/cart.png" alt="">
@@ -481,7 +481,7 @@
         	clearInterval(a);
         }
         square7.onmouseout = function(){
-        	setInterval(a);
+        	a = setInterval(change,30);
         }
 	</script>
 </body>

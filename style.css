@@ -110,13 +110,13 @@
 	height: 105px;
 	position: fixed;
 	top: 120px;
-	left: 1300px;
+	right: -85px;
 }
 .pp{
 	width: 130px;
 	position: fixed;
 	top: 180px;
-	left: 1301px;
+	right: -86px;
 }
 .pos2{
 	width: 130px;
@@ -124,7 +124,7 @@
 	background-color: #ff9260;
 	position: fixed;
 	top: 240px;
-	left: 1300px;
+	right: -85px;
 }
 .a{
 	font-size: 14px;
@@ -146,14 +146,14 @@
 	background-color: #ff9260;
 	position: fixed;
 	top: 390px;
-	left: 1300px;
+	right: -85px;
 }
 .pos4{
 	width: 130px;
 	height: 140px;
 	position: fixed;
 	top: 540px;
-	left: 1300px;
+	right: -85px;
 }
 .column{
 	width: 1180px;
