@@ -27,17 +27,18 @@
 .w1{
 	width: 500px;
 	height: 35px;
-	border-color: #fe6c00;
+	float: left;
 	color: #9a9791;
 	margin-top: 10px;
 	margin-left: 100px;
-	border-width: 5px;
+	border:5px solid #fe6c00;
 }
 .w2{
 	width: 85px;
 	height:45px;
 	color: white;
-	border-radius: 5px;
+	border:none;
+	margin-top: 10px;
 	background-color: #fe6c00;
 }
 .daohang{

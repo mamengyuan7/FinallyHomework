@@ -30,7 +30,7 @@
 			    <div class = "w">
 				    <img src="img/logo_03.jpg" alt="">
 			    </div>	
-			    <input class = "w1" type="text" value="输入商品网址或关键词，直通全网，快速帮5购！">
+			    <input class = "w1" id = "myinput" type="text" value="输入商品网址或关键词，直通全网，快速帮5购！">
 			    <input class = "w2" type="button" value="搜全网">
 			    <div class = "mm"><img class = "m3" src="img/wenhao.jpg" alt="">常见问题</div>
 			    <div class = "m"><img class = "m2" src="img/a_10.png" alt=""><p>mc@b5m.com    </p></div>
@@ -193,6 +193,20 @@
 		var capa1 = document.getElementById('capa1');
 		var capa2 = document.getElementById('capa2');
 		var word = document.getElementById('word');
+		var myinput = document.getElementById("myinput");
+        function addListener(element,e,fn){
+            if(element.addEventListener){
+                element.addEventListener(e,fn,false);
+            }else{
+                element.attachEvent("on"+e,fn);
+            }
+        }
+        addListener(myinput,"click",function(){
+            myinput.value = "";
+        })
+        addListener(myinput,"blur",function(){
+            myinput.value = "输入商品网址或关键词，直通全网，快速帮5购！";
+        })
 		ca1.onclick = function(){
 			var number = num.value;
 			if(number > 1){
