@@ -470,18 +470,22 @@
 		var gg1 = document.getElementById("gg1");
 		var gg2 = document.getElementById("gg2");
 		gg2.innerHTML = gg1.innerHTML;
-		var change=function(){
+		var a = setInterval(function(){
             square7.scrollTop++;
             if(square7.scrollTop>=gg1.offsetHeight){
                 square7.scrollTop=0;
             }
-        }
-        var a = setInterval(change,30);
+        },30);
         square7.onmouseover = function(){
         	clearInterval(a);
         }
         square7.onmouseout = function(){
-        	a = setInterval(change,30);
+        	a = setInterval(function(){
+		        square7.scrollTop++;
+		        if(square7.scrollTop>=gg1.offsetHeight){
+		            square7.scrollTop=0;
+		        }
+		    },30);
         }
 	</script>
 </body>
