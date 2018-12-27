@@ -300,7 +300,7 @@
 		    var ev=ev||event;
 		  
 		    var oL=ev.clientX-100-slider.offsetWidth/2;
-		    var oT=ev.clientY-120-slider.offsetHeight/2;
+		    var oT=ev.clientY-img1.getBoundingClientRect().top-slider.offsetHeight/2;
 		  
 		    var oMaxw=img1.offsetWidth-slider.offsetWidth;
 		    var oMaxh=img1.offsetHeight-slider.offsetHeight;
